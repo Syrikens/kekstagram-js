@@ -1,4 +1,4 @@
-let randomizerFunc = function (min, max) {
+let Randomizes = function (min, max) {
         if (max <= min) {
         alert("Значение max, должно привышать значение min")
     } else {
@@ -9,13 +9,14 @@ let randomizerFunc = function (min, max) {
 
 randomizerFunc(20, 25)
 
-let timingCheck = function (checkОbject, maxObjectLength){
+let checksTheLength = function (checkОbject, maxObjectLength){
     numberOfChars = checkОbject.length
     if (numberOfChars <= maxObjectLength) {
         alert ("true")
     }
-        else  (numberOfChars > maxObjectLength){
-            alert (false)
+        else {
+            alert ("false")       
         }
     }
-    timingCheck("Привет", 2)
+    
+ checksTheLength("Привет", 7)
